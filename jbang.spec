@@ -8,7 +8,7 @@ URL:        https://github.com/maxandersen/%{name}
 Source0:    https://github.com/maxandersen/%{name}/archive/v%{version}.tar.gz
 
 BuildArch:      noarch
-BuildRequires:  gradle-local
+BuildRequires:  gradle
 BuildRequires:  git
 
 %description
