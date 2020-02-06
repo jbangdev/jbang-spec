@@ -1,0 +1,3 @@
+# Spec repo for JBang
+
+Repo used by https://copr.fedorainfracloud.org/coprs/maxandersen/jbang/[Fedora COPR] to provide a rpm based install of https://github.com/maxandersen/jbang[jbang].
