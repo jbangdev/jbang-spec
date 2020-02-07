@@ -8,7 +8,7 @@ URL:        https://github.com/maxandersen/%{name}
 Source0:    https://github.com/maxandersen/%{name}/releases/download/v%{version}/%{name}-%{version}.tar
             
 BuildArch:      noarch
-BuildRequires:  java
+BuildRequires:  git
 Requires: java
 
 %description
