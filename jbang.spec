@@ -45,9 +45,11 @@ Instant cli app generated built using java and picocli as a dependency that was 
 
 
 %install
-install -p -m 644 bin/%{name}.jar %{buildroot}%{_javadir}/%{name}.jar
-install -p -m 644 bin/%{name} %{buildroot}%{_bindir}/%{name}
+#mkdir -p %{buildroot}%{_javadir}
+mkdir -p %{buildroot}%{_bindir}
+install -p -m 644 bin/%{name}.jar %{buildroot}%{_bindir}/%{name}.jar
+install -p -m 755 bin/%{name} %{buildroot}%{_bindir}/%{name}
 
 %files 
-%{_javadir}/jbang.jar 
+%{_bindir}/jbang.jar 
 %{_bindir}/jbang
