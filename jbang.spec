@@ -45,12 +45,9 @@ Instant cli app generated built using java and picocli as a dependency that was 
 
 
 %install
-rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/opt/%{name}
-install -d $RPM_BUILD_ROOT/opt/%{name}/bin
-install bin/jbang.jar $RPM_BUILD_ROOT/opt/%{name}/bin/jbang.jar
-install bin/jbang $RPM_BUILD_ROOT/opt/%{name}/bin/jbang
+install -p -m 644 bin/%{name}.jar %{buildroot}%{_javadir}/%{name}.jar
+install -p -m 644 bin/%{name} %{buildroot}%{_bindir}/%{name}
 
 %files 
-/opt/jbang/bin/jbang.jar 
-/opt/jbang/bin/jbang
+%{_javadir}/jbang.jar 
+%{_bindir}/jbang
