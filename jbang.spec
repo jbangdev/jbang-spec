@@ -1,12 +1,12 @@
 Name:       jbang
-Version:    0.14.0
+Version:    0.14.1
 Release:    1%{?dist}
 Summary:    Unleash the power of Java for shell scripting
 
 License:    MIT
 URL:        https://github.com/maxandersen/%{name}
 Source0:    https://github.com/maxandersen/%{name}/releases/download/v%{version}/%{name}-%{version}.tar
-            
+
 BuildArch:      noarch
 BuildRequires:  git
 Requires: java
@@ -16,10 +16,10 @@ Unleash the power of Java for shell scripting
 
 Want to learn or explore Java instantly without setup ?
 
-Do you like Java but uses python, groovy, kotlin or 
+Do you like Java but uses python, groovy, kotlin or
 similar languages for your scripts ?
 
-Ever tried out Java 10+ support for running .java files 
+Ever tried out Java 10+ support for running .java files
 directly in your shell but felt it was a bit too cumbersome ?
 
 Then try jbang which lets you do this:
@@ -32,9 +32,9 @@ Then try jbang which lets you do this:
     [jbang] Building jar...
     Hello Max!
     $ jbang hello.java -h
-    Usage: hello [-hV] &lt;greeting&gt;
+    Usage: hello [-hV] <greeting>
     hello made with jbang
-          &lt;greeting&gt;   The greeting to print
+          <greeting>   The greeting to print
       -h, --help       Show this help message and exit.
       -V, --version    Print version information and exit.
 
@@ -50,6 +50,6 @@ mkdir -p %{buildroot}%{_bindir}
 install -p -m 644 bin/%{name}.jar %{buildroot}%{_bindir}/%{name}.jar
 install -p -m 755 bin/%{name} %{buildroot}%{_bindir}/%{name}
 
-%files 
-%{_bindir}/jbang.jar 
+%files
+%{_bindir}/jbang.jar
 %{_bindir}/jbang
