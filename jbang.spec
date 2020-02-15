@@ -1,5 +1,5 @@
 Name:       jbang
-Version:    0.15.0
+Version:    0.15.1
 Release:    1%{?dist}
 Summary:    Unleash the power of Java for shell scripting
 
@@ -27,7 +27,7 @@ Then try jbang which lets you do this:
     $ jbang --init=cli hello.java
     $ jbang hello.java Max!
     [jbang] Resolving dependencies...
-    [jbang]     Resolving info.picocli:picocli:4.1.4...Done
+    [jbang]     Resolving info.picocli:picocli:4.2.0...Done
     [jbang] Dependencies resolved
     [jbang] Building jar...
     Hello Max!
