@@ -1,5 +1,5 @@
 Name:       jbang
-Version:    0.29.1
+Version:    0.30.0
 Release:    1%{?dist}
 Summary:    Unleash the power of Java for shell scripting
 
