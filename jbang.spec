@@ -1,5 +1,5 @@
 Name:       jbang
-Version:    0.97.0
+Version:    0.98.0
 Release:    1%{?dist}
 Summary:    Unleash the power of Java
 
@@ -27,7 +27,7 @@ Then try jbang which lets you do this:
     $ jbang --init=cli hello.java
     $ jbang hello.java Max!
     [jbang] Resolving dependencies...
-    [jbang]     Resolving info.picocli:picocli:4.5.0...Done
+    [jbang]     Resolving info.picocli:picocli:4.6.3...Done
     [jbang] Dependencies resolved
     [jbang] Building jar...
     Hello Max!
