@@ -1,5 +1,5 @@
 Name:       jbang
-Version:    0.137.0
+Version:    0.138.0
 Release:    1%{?dist}
 Summary:    Unleash the power of Java
 
